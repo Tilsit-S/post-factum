@@ -1,0 +1,61 @@
+.exam {
+    margin: 0 0 90px 0;
+
+    &__wrapper {
+
+    }
+
+    &__title {
+        text-align: center;
+        margin: 0 0 20px 0;
+    }
+
+    &__title-description {
+        text-align: center;
+        margin: 0 0 40px 0;
+    }
+
+    &__card-wrapper {
+        display: flex;
+        flex-flow: row nowrap;
+        padding: 0 0 10px 0;
+    }
+
+    &__card {
+        @include image-wrapper;
+        position: relative;
+        overflow: hidden;
+        width: 237px;
+        height: 184px;
+        border-radius: 20px;
+        padding: 24px;
+
+        &:not(:last-child) {
+            margin-right: 10px;
+        }
+
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    &__card-link {
+        display: block;
+        width: 70%;
+        background-color: $red;
+        border: none;
+        border-radius: 55px;
+        padding: 10px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 130%;
+        color: $white;
+        text-align: center;
+        margin-top: auto;
+        z-index: 2;
+    }
+}

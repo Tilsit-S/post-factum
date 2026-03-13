@@ -1,0 +1,126 @@
+.option {
+    overflow: hidden;
+    background: #f5f8f9;
+
+    &__wrapper {
+
+    }
+
+    &__title {
+        text-align: center;
+        margin: 100px 0 40px 0;
+    }
+
+    &__tabs-list {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        margin: 0 0 30px 0;
+    }
+
+    &__tabs-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 20%;
+        padding: 14px 30px;
+        background: #fff;
+        border: 1px solid #e5e3e3;
+        border-radius: 55px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 130%;
+        color: #707070;
+
+        &:not(:last-child) {
+            margin-right: 5px;
+        }
+    }
+
+    &__content {
+        padding: 0 0 10px 0;
+        margin: 0 0 90px 0;
+        min-height: 331px;
+    }
+
+    &__content-item {
+        position: absolute;
+        display: none;
+
+        &.active {
+            position: relative;
+            display: flex;
+        }
+    }
+
+    &__content-card {
+        display: flex;
+        flex-flow: row nowrap;
+        width: 100%;
+    }
+
+    &__content-card-description {
+        display: flex;
+        flex-flow: column nowrap;
+        width: 33.4%;
+        background: #fff;
+        border: 1px solid #e5e3e3;
+        border-radius: 20px;
+        padding: 30px;
+        margin: 0 10px 0 0;
+
+        ul {
+            list-style-type: disc;
+            margin: 0 0 23px 20px;
+            li {
+                p {
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 140%;
+                }
+
+                &:not(:last-child) {
+                    margin: 0 0 5px 0;
+                }
+            }
+        }
+    }
+
+    &__content-card-cost {
+        margin: 0 0 12px 0;
+    }
+
+    &__content-card-deadline {
+        margin: 0 0 30px 0;
+    }
+
+    &__content-card-includ {
+        font-weight: 600;
+        font-size: 18px;
+        margin: 0 0 20px 0;
+    }
+
+    &__calc-button {
+        @include red-button;
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    &__button-image {
+        width: 20px;
+        height: 20px;
+        margin: 0 0 0 10px;
+    }
+
+    &__content-card-banner {
+        @include image-wrapper;
+        flex-grow: 1;
+        background: linear-gradient(173deg, rgba(246, 246, 246, 0.86) 2.88%, rgba(175, 175, 175, 0.31) 100%);
+        border: 1px solid #e5e3e3;
+        border-radius: 20px;
+
+        img {
+            margin-bottom: auto;
+        }
+    }
+}

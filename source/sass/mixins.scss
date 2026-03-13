@@ -1,0 +1,86 @@
+@mixin breakpoint {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+
+    @media (max-width: 1100px) {
+        padding: 0 30px;
+    }
+
+    @media (max-width: $tablet-width) {
+        width: 100%;
+        padding: 0 53px;
+        margin: 0 auto;
+    }
+
+    @media (max-width: $mobile-width) {
+        width: 100%;
+        padding: 0 35px;
+        margin: 0 auto;
+    }
+}
+
+@mixin font-setting($size, $line-height, $font-width, $font-color) {
+    font-size: $size;
+    line-height: $line-height;
+    font-weight: $font-width;
+    color: $font-color;
+}
+
+@mixin title {
+    font-weight: 400;
+    font-size: 40px;
+    color: $black-text;
+
+    @media (max-width: $tablet-width) {
+        font-weight: 800;
+        font-size: 30px;
+        line-height: 44px;
+    }
+
+    @media (max-width: $mobile-width) {
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 34px;
+    }
+}
+
+@mixin text {
+    font-size: 16px;
+    line-height: 26px;
+}
+
+@mixin image-wrapper {
+    overflow: hidden;
+    display: flex;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin red-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+    border-radius: 55px;
+    border: none;
+    font-weight: 500;
+    font-size: 18px;
+    margin: 0 10px 0 0;
+    background: $red;
+    color: $white;
+    transition: 0.3s;
+
+    &:hover {
+        background: $white;
+        color: $red;
+        box-shadow: inset 0 0 0 1px $red;
+
+        svg {
+            path {
+                fill: $red;
+            }
+        }
+    }
+}

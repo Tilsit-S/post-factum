@@ -1,0 +1,210 @@
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    font-family: "Raleway";
+    background-color: #fff;
+    color: $black-text;
+    min-width: 360px;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+
+    &.no-scroll {
+        overflow: hidden;
+    }
+}
+
+main {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: $black-text;
+    transition: 0.1s ease-in-out;
+
+    &:hover {
+        opacity: 0.8;
+    }
+
+    &:active {
+        opacity: 0.6;
+    }
+}
+
+button {
+    cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+p {
+    padding: 0;
+    margin: 0;
+    cursor: default;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 42px;
+    color: $black-text;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(1px 1px 1px 1px);
+    padding: 0;
+    border: 0;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+}
+
+.container {
+    @include breakpoint;
+    width: 978px;
+
+    @media (max-width: 1000px) {
+        width: 100%;
+    }
+}
+
+.button {
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.link {
+    transition: 0.1s ease-in-out;
+
+    &:hover {
+        opacity: 0.8;
+        transition: 0.3s;
+    }
+}
+
+label {
+    transition: 0.1s ease-in-out;
+
+    cursor: pointer;
+}
+
+select {
+    border: none;
+    -webkit-appearance: none;
+    
+    &:hover,
+    &:focus {
+        outline: 0 !important;
+    }
+}
+
+input {
+    transition: 0.1s ease-in-out;
+
+    cursor: pointer;
+    outline: none;
+}
+
+.input-wrapper {
+    position: relative;
+
+    &__label {
+        display: flex;
+        flex-direction: row;
+
+        @media (max-width: $tablet-width) {
+            justify-content: center;
+            width: 328px;
+        }
+
+        @media (max-width: $mobile-width) {
+            flex-direction: column;
+            width: 100%;
+        }
+    }
+
+    label {
+        width: 35%;
+
+        @media (max-width: 1250px) {
+            width: 40%;
+        }
+
+        @media (max-width: $mobile-width) {
+            width: 100%;
+        }
+    }
+
+    span {
+        display: none;
+        width: 100%;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 15px;
+
+        input {
+        }
+
+        @media (max-width: $tablet-width) {
+            width: 100%;
+            margin: 0 0 6px 0;
+            text-align: center;
+        }
+
+        @media (max-width: $mobile-width) {
+            width: 100%;
+            margin: 0 0 6px 0;
+            text-align: center;
+        }
+    }
+
+    &.error {
+        input {
+            background: rgba(244, 226, 224, 1);
+        }
+
+        span {
+            display: block;
+            font-size: 14px;
+            line-height: 22px;
+            padding: 6px 1px 6px 20px;
+            color: $red;
+        }
+    }
+}
+
+.item-link {
+
+    &::after {
+        position: absolute;
+        top: 39px;
+        right: 39px;
+        content: "";
+        display: block;
+        width: 34px;
+        height: 34px;
+        background-size: 34px 34px;
+        background-position: center;
+    }
+}

@@ -1,0 +1,12 @@
+@import "normalize", "fonts", "variables", "mixins", "global", "animation";
+
+// components
+@import "block/components/usage.scss", "block/components/exam.scss", "block/components/option.scss",
+        "block/components/technologies.scss";
+
+@import
+        //index
+        "block/components/header.scss",
+        "block/components/footer.scss";
+
+// subcomponents
