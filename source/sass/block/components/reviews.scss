@@ -1,0 +1,15 @@
+.reviews {
+    overflow: hidden;
+
+    &__title {
+        text-align: center;
+        margin: 100px 0 40px 0;
+    }
+
+    &__title-description {
+        font-weight: 400;
+        font-size: 20px;
+        text-align: center;
+        margin: 0 0 40px 0;
+    }
+}
