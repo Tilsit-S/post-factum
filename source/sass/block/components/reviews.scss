@@ -16,5 +16,27 @@
     &__tabs-list {
         display: flex;
         flex-flow: row wrap;
+        margin: 0 0 30px 0;
+    }
+
+    &__tabs-item {
+
+        &:not(:last-child) {
+            margin: 0 13px 0 0;
+        }
+
+        p {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            background: #fff;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 130%;
+            color: #707070;
+            padding: 12px 30px;
+            border: 1px solid #e5e3e3;
+            border-radius: 55px;
+        }
     }
 }
