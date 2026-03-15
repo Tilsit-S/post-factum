@@ -1,0 +1,90 @@
+.content-card {
+    overflow: hidden;
+    max-width: 320px;
+    overflow: hidden;
+    background: linear-gradient(173deg, rgba(246, 246, 246, 0.86) 2.88%, rgba(175, 175, 175, 0.31) 100%);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e5e3e3;
+    border-radius: 20px;
+    padding: 21px 19px;
+
+    &__gallery {
+        display: flex;
+        gap: 8px;
+        margin: 0 0 30px 0;
+    }
+
+    &__image {
+        flex: 1;
+        height: 140px;
+        border-radius: 12px;
+        overflow: hidden;
+        
+        img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        }
+    }
+
+    &__content {
+    }
+
+    &__title {
+        font-weight: 600;
+        font-size: 18px;
+        margin: 0 0 5px 0;
+        
+        span {
+            font-weight: 800;
+        }
+    }
+
+    &__location {
+        font-weight: 300;
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+    &__details {
+        font-size: 14px;
+        margin-bottom: 15px;
+
+        p {
+            font-weight: 300;
+        }
+        
+        strong {
+            font-weight: 500;
+        }
+    }
+
+    &__stats {
+        display: flex;
+        gap: 20px;
+        font-size: 14px;
+        margin-bottom: 25px;
+        padding-top: 15px;
+        
+        strong {
+        font-weight: normal;
+        }
+    }
+
+    &__btn {
+        width: 100%;
+        padding: 16px;
+        background: $red;
+        color: #fff;
+        border: none;
+        border-radius: 30px;
+        font-weight: bold;
+        font-size: 14px;
+        cursor: pointer;
+        transition: 0.3s ease;
+
+        &:hover {
+        background: darken($red, 10%);
+        }
+    }
+}
