@@ -16,6 +16,7 @@
     &__tabs-list {
         display: flex;
         flex-flow: row wrap;
+        margin: 0 0 30px 0;
     }
 
     &__tabs-item {
@@ -37,5 +38,15 @@
             border: 1px solid #e5e3e3;
             border-radius: 55px;
         }
+    }
+
+    &__content-item {
+
+    }
+
+    &__content-cards {
+        display: flex;
+        flex-flow: row nowrap;
+        gap: 0 10px;
     }
 }
