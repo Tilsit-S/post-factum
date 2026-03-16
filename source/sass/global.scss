@@ -82,7 +82,7 @@ ul {
 
 .container {
     @include breakpoint;
-    width: 978px;
+    width: 1000px;
 
     @media (max-width: 1000px) {
         width: 100%;
@@ -112,7 +112,7 @@ label {
 select {
     border: none;
     -webkit-appearance: none;
-    
+
     &:hover,
     &:focus {
         outline: 0 !important;
