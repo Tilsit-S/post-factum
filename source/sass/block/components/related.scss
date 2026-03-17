@@ -1,3 +1,47 @@
 .related {
     overflow: hidden;
+    margin: 0 0 90px 0;
+
+    &__title {
+        text-align: center;
+        margin: 0 0 20px 0;
+    }
+
+    &__title-description {
+        text-align: center;
+        margin: 0 0 40px 0;
+    }
+
+    &__tabs {
+        display: flex;
+        flex-flow: row wrap;
+        padding: 0 0 10px 0;
+        gap: 10px;
+    }
+
+    &__tabs-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 12px 19px;
+        font-weight: 500;
+        font-size: 14px;
+        border: 1px solid #e5e3e3;
+        border-radius: 55px;
+        line-height: 130%;
+        color: #707070;
+        transition: 0.1s ease-in-out;
+
+        &:hover {
+            color: $white;
+            border: 1px solid #c53131;
+            background: #c53131;
+        }
+    }
+
+    .active {
+        background: $red;
+        color: $white;
+        border: 1px solid $red;
+    }
 }
