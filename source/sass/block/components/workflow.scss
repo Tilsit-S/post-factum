@@ -23,20 +23,28 @@
     }
 
     .steps {
+
         &__item {
+            overflow: hidden;
+            position: relative;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            height: 45px;
             margin: 0;
             padding: 12px 30px;
-            border: 1px solid #e0e0e0;
-            color: #999;
+            color: $red;
             font-size: 14px;
             text-align: center;
             min-width: 140px;
+            border: none;
 
-            clip-path: polygon(92% 0, 100% 50%, 92% 100%, 0% 100%, 8% 50%, 0% 0%);
-
-            &_active {
-            border-color: $red;
-            color: $red;
+            svg {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                //height: 100%;
             }
         }
     }
