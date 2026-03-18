@@ -9,8 +9,8 @@
             tabs.map( item => item.classList.remove('active'));
             tabs[tabSelect].classList.add('active');
 
-            content.map( content => content.classList.remove('active'));
-            content[tabSelect].classList.add('active');
+            content.map( content => content.classList.remove('active-item'));
+            content[tabSelect].classList.add('active-item');
         }
     })
 })();

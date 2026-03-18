@@ -1,6 +1,10 @@
 .exam {
     margin: 0 0 90px 0;
 
+    @media (max-width: 1000px) {
+        margin: 0 0 70px 0;
+    }
+
     &__wrapper {
 
     }
@@ -8,6 +12,16 @@
     &__title {
         text-align: center;
         margin: 0 0 20px 0;
+
+        @media (max-width: 1000px) {
+            font-size: 34px;
+            padding: 50px 0 0 0;
+        }
+
+        @media (max-width: 650px) {
+            font-size: 26px;
+            text-align: center;
+        }
     }
 
     &__title-description {
@@ -23,6 +37,11 @@
 
         @media (max-width: 800px) {
            flex-flow: row wrap;
+        }
+
+        @media (max-width: 630px) {
+           justify-content: center;
+            gap: 10px;
         }
     }
 
@@ -42,11 +61,31 @@
             left: 0;
             width: auto;
             height: 100%;
+
+            @media (max-width: 800px) {
+                width: 100%;
+                height: auto;
+            }
+
+            @media (max-width: 630px) {
+                width: auto;
+                height: 100%;
+            }
+
+            @media (max-width: 500px) {
+                width: 100%;
+                height: auto;
+            }
         }
 
         @media (max-width: 800px) {
             max-width: 326px;
-            width: auto;
+            width: 46%;
+        }
+
+        @media (max-width: 500px) {
+            max-width: 400px;
+            width: 100%;
         }
     }
 

@@ -3,6 +3,10 @@
     background: linear-gradient(110deg, rgba(245, 248, 249, 0.8) 0%, rgba(175, 175, 175, 0.8) 100%);
     margin: 0 0 100px 0;
 
+    @media (max-width: 1000px) {
+        margin: 0;
+    }
+
     &__wrapper {
         position: relative;
         display: flex;
@@ -116,6 +120,7 @@
             gap: 12px;
             margin: 0 0 40px 0;
         }
+        
         @media (max-width: 400px) {
             width: 100%;
         }
@@ -242,10 +247,6 @@
         }
 
         @media (max-width: 825px) {
-            opacity: 0.5;
-        }
-
-        @media (max-width: 769px) {
             display: none;
         }
     }
@@ -253,7 +254,7 @@
     &__tablet-image-wrapper {
         display: none;
 
-        @media (max-width: 768px) {
+        @media (max-width: 825px) {
             @include image-wrapper;
             position: absolute;
             top: 0;
