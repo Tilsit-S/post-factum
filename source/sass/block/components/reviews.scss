@@ -4,7 +4,16 @@
 
     &__title {
         text-align: center;
-        margin: 100px 0 40px 0;
+        margin: 0 0 40px 0;
+
+        @media (max-width: 1000px) {
+            font-size: 34px;
+            margin: 20px 0;
+        }
+
+        @media (max-width: 650px) {
+            font-size: 26px;
+        }
     }
 
     &__title-description {
@@ -18,13 +27,10 @@
         display: flex;
         flex-flow: row wrap;
         margin: 0 0 30px 0;
+        gap: 13px;
     }
 
     &__tabs-item {
-
-        &:not(:last-child) {
-            margin: 0 13px 0 0;
-        }
 
         p {
             display: inline-flex;
@@ -38,6 +44,10 @@
             padding: 12px 30px;
             border: 1px solid #e5e3e3;
             border-radius: 55px;
+
+            @media (max-width: 650px) {
+                padding: 8px 30px;
+            }
         }
     }
 
@@ -48,6 +58,16 @@
     &__content-cards {
         display: flex;
         flex-flow: row nowrap;
-        gap: 0 10px;
+        gap: 10px;
+
+        @media (max-width: 950px) {
+            flex-flow: row wrap;
+        }
+
+        @media (max-width: 650px) {
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
+        }
     }
 }
