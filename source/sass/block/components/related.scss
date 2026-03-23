@@ -5,11 +5,24 @@
     &__title {
         text-align: center;
         margin: 0 0 20px 0;
+
+        @media (max-width: 1000px) {
+            font-size: 34px;
+            margin: 0 0 20px 0;
+        }
+
+        @media (max-width: 650px) {
+            font-size: 26px;
+        }
     }
 
     &__title-description {
         text-align: center;
         margin: 0 0 40px 0;
+
+        @media (max-width: 650px) {
+            margin: 0 0 30px 0;
+        }
     }
 
     &__tabs {
@@ -36,6 +49,10 @@
             color: $white;
             border: 1px solid #c53131;
             background: #c53131;
+        }
+
+        @media (max-width: 650px) {
+            padding: 8px 16px;
         }
     }
 
