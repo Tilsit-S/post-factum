@@ -1,0 +1,160 @@
+.fast-calc {
+    display: none;
+    width: 319px;
+    padding: 24px;
+    border: 1px solid #e5e3e3;
+    border-radius: 24px;
+    background: #fff;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+
+    .close-button {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        display: flex;
+        flex-shrink: 0;
+        padding: 10px;
+        background: none;
+        border: none;
+
+        svg {
+            width: 7px;
+            height: 7px;
+        }
+    }
+
+    &__title {
+        font-weight: 600;
+        font-size: 18px;
+        color: #8b0000;
+        margin: 0 0 20px 0;
+    }
+
+    &__error-message {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 140%;
+        color: #e42121;
+        margin: 0 0 20px 0;
+    }
+
+    .necessary {
+        color: $red;
+    }
+
+    &__info-wrapper {
+        display: flex;
+        flex-flow: column nowrap;
+        gap: 10px 0;
+    }
+
+    &__input-wrapper {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+
+        &:nth-child(3) {
+            margin: 0 0 10px 0;
+        }
+    }
+
+    &__label {
+
+    }
+
+    &__index {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 130%;
+        color: #242121;
+        margin: 0 10px 0 0;
+    }
+
+    &__field {
+        width: 168px;
+        padding: 5px 16px;
+        border: 1px solid #e5e3e3;
+        border-radius: 16px;
+        background: #f5f8f9;
+
+        &::placeholder {
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 140%;
+            color: #707070;
+        }
+    }
+
+    &__policy-wrapper {
+        display: flex;
+        flex-flow: column nowrap;
+        gap: 10px 0;
+        margin: 0 0 30px 0;
+
+        li {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: flex-start;
+            align-items: center;
+
+            &:first-child {
+                align-items: flex-start;
+            }
+
+            input {
+                display: flex;
+                flex-shrink: 0;
+                border: 1px solid #3a3b3c;
+                border-radius: 6px;
+                width: 20px;
+                height: 20px;
+                margin: 0 10px 0 0;
+            }
+
+            p {
+                font-weight: 400;
+                font-size: 10px;
+                color: #242121;
+            }
+        }
+    }
+
+    &__request-button {
+        @include red-button;
+        width: 100%;
+        font-weight: 500;
+        font-size: 14px;
+        padding: 14px;
+        margin: 0 0 12px 0;
+
+        svg {
+            margin: 0 0 0 20px;
+        }
+
+        &:hover {
+            background: #c53131;
+            color: $white;
+            box-shadow: inset 0 0 0 1px #c53131;
+
+            svg {
+                path {
+                    stroke: $white;
+                }
+            }
+        }
+    }
+
+    &__call-back {
+        font-weight: 400;
+        font-size: 12px;
+        text-align: center;
+    }
+}

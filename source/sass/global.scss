@@ -127,69 +127,10 @@ input {
 }
 
 .input-wrapper {
-    position: relative;
-
-    &__label {
-        display: flex;
-        flex-direction: row;
-
-        @media (max-width: $tablet-width) {
-            justify-content: center;
-            width: 328px;
-        }
-
-        @media (max-width: $mobile-width) {
-            flex-direction: column;
-            width: 100%;
-        }
-    }
-
-    label {
-        width: 35%;
-
-        @media (max-width: 1250px) {
-            width: 40%;
-        }
-
-        @media (max-width: $mobile-width) {
-            width: 100%;
-        }
-    }
-
-    span {
-        display: none;
-        width: 100%;
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 15px;
-
-        input {
-        }
-
-        @media (max-width: $tablet-width) {
-            width: 100%;
-            margin: 0 0 6px 0;
-            text-align: center;
-        }
-
-        @media (max-width: $mobile-width) {
-            width: 100%;
-            margin: 0 0 6px 0;
-            text-align: center;
-        }
-    }
 
     &.error {
         input {
-            background: rgba(244, 226, 224, 1);
-        }
-
-        span {
-            display: block;
-            font-size: 14px;
-            line-height: 22px;
-            padding: 6px 1px 6px 20px;
-            color: $red;
+            border: 1px solid #e42121;
         }
     }
 }
@@ -206,5 +147,23 @@ input {
         height: 34px;
         background-size: 34px 34px;
         background-position: center;
+    }
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(9, 10, 18, 0.6);
+    overflow-x: hidden;
+    z-index: 2;
+
+    &.open {
+        display: block;
     }
 }

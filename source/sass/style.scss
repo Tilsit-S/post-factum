@@ -2,9 +2,8 @@
 
 // components
 @import "block/components/usage.scss", "block/components/exam.scss", "block/components/option.scss",
-        "block/components/technologies.scss", "block/components/reviews.scss", "block/subcomponents/content-card.scss",
-        "block/components/workflow.scss", "block/components/faq.scss", "block/components/description.scss",
-        "block/components/related.scss";
+        "block/components/technologies.scss", "block/components/reviews.scss", "block/components/workflow.scss",
+        "block/components/faq.scss", "block/components/description.scss", "block/components/related.scss";
 
 @import
         //index
@@ -12,3 +11,5 @@
         "block/components/footer.scss";
 
 // subcomponents
+@import "block/subcomponents/content-card.scss", "block/subcomponents/modal-fast-calc.scss",
+        "block/subcomponents/modal-call.scss", "block/subcomponents/modal-calc.scss";
