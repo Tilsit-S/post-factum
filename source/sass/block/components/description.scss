@@ -2,6 +2,14 @@
     overflow: hidden;
     margin: 0 0 100px 0;
 
+    @media (max-width: 850px) {
+        margin: 0 0 80px 0;
+    }
+
+    @media (max-width: 650px) {
+        margin: 0 0 60px 0;
+    }
+
     &__title {
         text-align: center;
         margin: 100px 0 40px 0;
@@ -22,6 +30,10 @@
         font-size: 12px;
         line-height: 140%;
         margin: 0 0 100px 0;
+
+        @media (max-width: 850px) {
+            margin: 0 0 70px 0;
+        }
     }
 
     .calc-banner {
@@ -29,6 +41,10 @@
         background: linear-gradient(152deg, rgba(245, 248, 249, 0.8) 0%, rgba(175, 175, 175, 0.8) 100%);
         border-radius: 20px;
         padding: 60px 30px;
+
+        @media (max-width: 850px) {
+            padding: 50px 15px;
+        }
 
         &__image {
             @include image-wrapper;
@@ -64,6 +80,15 @@
             color: $red;
             margin-bottom: 30px;
             font-weight: normal;
+
+            @media (max-width: 890px) {
+                font-size: 20px;
+                width: 64%;
+
+                br {
+                    display: none;
+                }
+            }
 
             span {
                 color: $red;
@@ -111,6 +136,11 @@
                 margin: 0 0 0 20px;
             }
 
+            @media (max-width: 850px) {
+                font-size: 14px;
+                padding: 14px 30px;
+            }
+
             @media (max-width: 650px) {
                 margin: 0;
                 padding: 20px;
@@ -130,6 +160,15 @@
             color: $red;
             border: 1px solid $red;
             transition: 0.3s;
+
+            @media (max-width: 850px) {
+                font-size: 14px;
+                padding: 14px 30px;
+            }
+
+            @media (max-width: 650px) {
+                padding: 20px;
+            }
 
             svg {
                 margin: 0 0 0 20px;
