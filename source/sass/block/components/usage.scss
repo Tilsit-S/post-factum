@@ -176,12 +176,12 @@
 
         &:hover {
             background: $white;
-            color: $red;
-            box-shadow: inset 0 0 0 1px $red;
+            color: #c53131;
+            box-shadow: inset 0 0 0 1px #c53131;
 
             svg {
                 path {
-                    fill: $red;
+                    fill: #c53131;
                 }
             }
         }
@@ -198,10 +198,10 @@
         transition: 0.3s;
 
         &:hover {
-            background: $red;
+            background: #c53131;
             color: $white;
             border: 1px solid $white;
-            box-shadow: inset 0 0 0 1px $red;
+            box-shadow: inset 0 0 0 1px #c53131;
 
             svg {
                 path {
