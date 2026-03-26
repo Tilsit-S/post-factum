@@ -38,6 +38,15 @@
         font-size: 14px;
         line-height: 130%;
         color: #707070;
+        cursor: pointer;
+        transition: 0.3s;
+
+        &:hover {
+            background: #c53131;
+            color: $white;
+            border: 1px solid $white;
+            box-shadow: inset 0 0 0 1px #c53131;
+        }
 
         @media (max-width: 1000px) {
             font-size: 14px;

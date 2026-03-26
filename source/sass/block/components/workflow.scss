@@ -31,6 +31,11 @@
         justify-content: center;
         margin-bottom: 50px;
         gap: 10px;
+
+        @media (max-width: 560px) {
+            gap: 3px;
+            margin-bottom: 40px;
+        }
     }
 
     &__grid {
@@ -67,7 +72,6 @@
             }
 
             @media (max-width: 560px) {
-                height: 36px;
                 padding: 12px 30px;
                 font-size: 12px;
                 min-width: 142px;

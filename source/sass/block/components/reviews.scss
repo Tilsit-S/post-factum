@@ -35,6 +35,8 @@
     }
 
     &__tabs-item {
+        cursor: pointer;
+
 
         p {
             display: inline-flex;
@@ -49,11 +51,24 @@
             border: 1px solid #e5e3e3;
             border-radius: 55px;
 
+            &:hover {
+                background: #c53131;
+                color: $white;
+                border: 1px solid $white;
+                box-shadow: inset 0 0 0 1px #c53131;
+            }
+
             @media (max-width: 650px) {
                 padding: 8px 30px;
             }
         }
     }
+
+    /*.active {
+        background: #8b0000;
+        color: #f5f8f9;
+        border: 1px solid #8b0000;
+    }*/
 
     &__content-item {
 
