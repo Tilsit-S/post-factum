@@ -25,4 +25,3 @@
     overlay.addEventListener('click', closeModal);
 })();
 */
-"use strict";

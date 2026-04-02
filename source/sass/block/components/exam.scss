@@ -49,6 +49,9 @@
         @include image-wrapper;
         position: relative;
         overflow: hidden;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        align-items: flex-start;
         max-width: 237px;
         width: 24.3%;
         height: 184px;
@@ -89,6 +92,14 @@
         }
     }
 
+    &__card-item {
+        font-weight: 600;
+        font-size: 18px;
+        color: #f5f8f9;
+        text-align: left;
+        z-index: 2;
+    }
+
     &__card-link {
         display: block;
         width: 70%;
@@ -101,7 +112,7 @@
         line-height: 130%;
         color: $white;
         text-align: center;
-        margin-top: auto;
+        margin: 0 auto;
         z-index: 2;
     }
 }
