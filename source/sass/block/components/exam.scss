@@ -40,7 +40,7 @@
         }
 
         @media (max-width: 630px) {
-           justify-content: center;
+            justify-content: center;
             gap: 10px;
         }
     }
@@ -81,7 +81,12 @@
             }
         }
 
+        @media (max-width: 950px) {
+           padding: 24px 4px;
+        }
+
         @media (max-width: 800px) {
+            padding: 24px;
             max-width: 326px;
             width: 46%;
         }
@@ -98,6 +103,10 @@
         color: #f5f8f9;
         text-align: left;
         z-index: 2;
+
+        @media (max-width: 800px) {
+            font-size: 20px;
+        }
     }
 
     &__card-link {
